@@ -1,0 +1,19 @@
+.row .col-10 h2 {
+   font-size: 50px;
+   color: #ce653b;
+   font-weight: bold;
+}
+
+.row .col-10 span {
+   font-size: 50px;
+   color: #fff;
+}
+
+.row .col-10 .garis-bawah {
+   border: 2px solid #000;
+   height: 5px;
+   border-radius: 10px;
+   background: linear-gradient(to right, red, yellow, lime);
+   width: 100%;
+}
+
