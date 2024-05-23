@@ -35,7 +35,9 @@ const Dashboard = () => {
                         <div className="col-12 col-md-8 offset-md-2 chat-container">
                             <div className="chat-box">
                                 {messages.map((message, index) => (
-                                    <div key={index} className={`message ${message.role}-message`}>
+                                    <div
+                                        key={index}
+                                        className={`message ${message.role}-message`}>
                                         <div className="message-content">
                                             <ReactMarkdown>{message.content}</ReactMarkdown> {/* Render markdown content */}
                                         </div>
@@ -56,14 +58,14 @@ const Dashboard = () => {
                                     type="text"
                                     value={input}
                                     onChange={(e) => setInput(e.target.value)}
-                                    placeholder="Type your message..."
+                                    placeholder="Tulis pesanmu disini"
                                     className="form-control chat-input"
                                 />
                                 <button
                                     className="btn btn-primary send-button"
                                     onClick={handleSubmit}
                                 >
-                                    Send
+                                    Kirim
                                 </button>
                             </div>
                         </div>
